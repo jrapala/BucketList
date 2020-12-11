@@ -12,6 +12,9 @@ struct MapView: UIViewRepresentable {
     // data is passed from MapKit to the coordinator to a @Binding
     @Binding var centerCoordinate: CLLocationCoordinate2D
 
+    // hold all locations passed to MapView
+    var annotations: [MKPointAnnotation]
+
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
@@ -19,7 +22,11 @@ struct MapView: UIViewRepresentable {
         return mapView
     }
 
-    func updateUIView(_ view: MKMapView, context: UIViewRepresentableContext<MapView>) {
+    func updateUIView(_ view: MKMapView, context: Context) {
+        if annotations.count != view.annotations.count {
+            view.removeAnnotations(view.annotations)
+            view.addAnnotations(annotations)
+        }
     }
     
     func makeCoordinator() -> Coordinator {
@@ -52,6 +59,6 @@ extension MKPointAnnotation {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(centerCoordinate: .constant(MKPointAnnotation.example.coordinate))
+        MapView(centerCoordinate: .constant(MKPointAnnotation.example.coordinate), annotations: [MKPointAnnotation.example])
     }
 }
