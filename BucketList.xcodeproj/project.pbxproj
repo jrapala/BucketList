@@ -13,6 +13,7 @@
 		BC281272257F14B5008EB5DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC281271257F14B5008EB5DD /* Preview Assets.xcassets */; };
 		BC687D51258303BE007B86B6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC687D50258303BE007B86B6 /* MapView.swift */; };
 		BCCCD06825852D87005F4887 /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCD06725852D87005F4887 /* MKPointAnnotation-ObservableObject.swift */; };
+		BCCCD06B25852EC3005F4887 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCD06A25852EC3005F4887 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BC281273257F14B5008EB5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC687D50258303BE007B86B6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BCCCD06725852D87005F4887 /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
+		BCCCD06A25852EC3005F4887 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BC281273257F14B5008EB5DD /* Info.plist */,
 				BC281270257F14B5008EB5DD /* Preview Content */,
 				BC687D50258303BE007B86B6 /* MapView.swift */,
+				BCCCD06A25852EC3005F4887 /* EditView.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC28126D257F14B3008EB5DD /* ContentView.swift in Sources */,
+				BCCCD06B25852EC3005F4887 /* EditView.swift in Sources */,
 				BCCCD06825852D87005F4887 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				BC687D51258303BE007B86B6 /* MapView.swift in Sources */,
 				BC28126B257F14B3008EB5DD /* BucketListApp.swift in Sources */,
