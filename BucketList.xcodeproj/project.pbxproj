@@ -12,6 +12,7 @@
 		BC28126F257F14B5008EB5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC28126E257F14B5008EB5DD /* Assets.xcassets */; };
 		BC281272257F14B5008EB5DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC281271257F14B5008EB5DD /* Preview Assets.xcassets */; };
 		BC687D51258303BE007B86B6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC687D50258303BE007B86B6 /* MapView.swift */; };
+		BCCCD06825852D87005F4887 /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCD06725852D87005F4887 /* MKPointAnnotation-ObservableObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BC281271257F14B5008EB5DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC281273257F14B5008EB5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC687D50258303BE007B86B6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BCCCD06725852D87005F4887 /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				BC28126A257F14B3008EB5DD /* BucketListApp.swift */,
 				BC28126C257F14B3008EB5DD /* ContentView.swift */,
+				BCCCD06725852D87005F4887 /* MKPointAnnotation-ObservableObject.swift */,
 				BC28126E257F14B5008EB5DD /* Assets.xcassets */,
 				BC281273257F14B5008EB5DD /* Info.plist */,
 				BC281270257F14B5008EB5DD /* Preview Content */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC28126D257F14B3008EB5DD /* ContentView.swift in Sources */,
+				BCCCD06825852D87005F4887 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				BC687D51258303BE007B86B6 /* MapView.swift in Sources */,
 				BC28126B257F14B3008EB5DD /* BucketListApp.swift in Sources */,
 			);
