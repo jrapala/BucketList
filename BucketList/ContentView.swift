@@ -12,7 +12,8 @@ struct ContentView: View {
     // Store the center coordinate of the map
     @State private var centerCoordinate = CLLocationCoordinate2D()
     // Store array of locations
-    @State private var locations = [MKPointAnnotation]()
+    // Not all points need to be of CodableMKPointAnnotation, due to behavioral subtyping (or the Liskov Substitution Principle)
+    @State private var locations = [CodableMKPointAnnotation]()
     // Store selected place
     @State private var selectedPlace: MKPointAnnotation?
     // Store place details
@@ -33,7 +34,7 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        let newLocation = MKPointAnnotation()
+                        let newLocation = CodableMKPointAnnotation()
                         newLocation.coordinate = self.centerCoordinate
                         newLocation.title = ""
                         newLocation.subtitle = ""
