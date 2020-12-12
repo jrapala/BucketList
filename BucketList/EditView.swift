@@ -17,7 +17,7 @@ struct EditView: View {
     enum LoadingState {
         case loading, loaded, failed
     }
-    
+        
     var body: some View {
         NavigationView {
             Form {
@@ -32,7 +32,7 @@ struct EditView: View {
                             Text(page.title)
                                 .font(.headline)
                             + Text(": ")
-                            + Text("Page description here")
+                            + Text(page.description)
                                 .italic()
                         }
                     } else if loadingState == .loading {
