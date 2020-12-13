@@ -58,13 +58,7 @@ struct ContentView: View {
                     }
                 }
             } else {
-                Button("Unlock Places") {
-                    self.authenticate()
-                }
-                .padding()
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .clipShape(Capsule())
+                UnlockButton(isUnlocked: $isUnlocked)
             }
         }
         .alert(isPresented: $showingPlaceDetails) {
@@ -106,30 +100,6 @@ struct ContentView: View {
             try data.write(to: filename, options: [.atomicWrite, .completeFileProtection])
         } catch {
             print("Unable to save data.")
-        }
-    }
-    
-    func authenticate() {
-        let context = LAContext()
-        var error: NSError?
-        
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            // string is for TouchID
-            // FaceID uses plist
-            let reason = "Please authenticate yourself to unlock your places."
-            
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
-                
-                DispatchQueue.main.async {
-                    if success {
-                        self.isUnlocked = true
-                    } else {
-                        // error
-                    }
-                }
-            }
-        } else {
-            // no biometrics
         }
     }
 }

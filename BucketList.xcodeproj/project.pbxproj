@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC15BCAD2585746C006D729F /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15BCAC2585746C006D729F /* MKPointAnnotation-Codable.swift */; };
+		BC15BCB425859624006D729F /* UnlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15BCB325859624006D729F /* UnlockButton.swift */; };
 		BC28126B257F14B3008EB5DD /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28126A257F14B3008EB5DD /* BucketListApp.swift */; };
 		BC28126D257F14B3008EB5DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28126C257F14B3008EB5DD /* ContentView.swift */; };
 		BC28126F257F14B5008EB5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC28126E257F14B5008EB5DD /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		BC15BCAC2585746C006D729F /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
+		BC15BCB325859624006D729F /* UnlockButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockButton.swift; sourceTree = "<group>"; };
 		BC281267257F14B3008EB5DD /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC28126A257F14B3008EB5DD /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		BC28126C257F14B3008EB5DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BC28126A257F14B3008EB5DD /* BucketListApp.swift */,
+				BC15BCB325859624006D729F /* UnlockButton.swift */,
 				BC28126C257F14B3008EB5DD /* ContentView.swift */,
 				BCCCD06D25853260005F4887 /* Result.swift */,
 				BCCCD06725852D87005F4887 /* MKPointAnnotation-ObservableObject.swift */,
@@ -158,6 +161,7 @@
 				BC28126D257F14B3008EB5DD /* ContentView.swift in Sources */,
 				BCCCD06B25852EC3005F4887 /* EditView.swift in Sources */,
 				BCCCD06825852D87005F4887 /* MKPointAnnotation-ObservableObject.swift in Sources */,
+				BC15BCB425859624006D729F /* UnlockButton.swift in Sources */,
 				BC687D51258303BE007B86B6 /* MapView.swift in Sources */,
 				BC28126B257F14B3008EB5DD /* BucketListApp.swift in Sources */,
 			);
